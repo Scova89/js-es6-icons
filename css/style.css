@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+.fa-fonticons{
+    font-size: 80pt;
+    color: rgb(0, 89, 255);
+    padding: 20px
+}
+
+.choosing-bar{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(71, 155, 252);
+}
