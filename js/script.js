@@ -118,19 +118,24 @@ const schedaIcona = document.querySelector('.container-schede');
 for(let i = 0; i < animals.length; i++){
     const schedaCorrente = animals[i];
     
-    schedaIcona.innerHTML += schedaTemplate(schedaCorrente);
+    schedaIcona.innerHTML += schedaTemplate(schedaCorrente), colore(schedaCorrente);
 }
 
 
 function schedaTemplate(dati){
     const {name, prefix, type, family, color} = dati;
+    
     return `
     <div class="scheda">
         <div>
-            <i class="${family} ${prefix}${name}"></i>
+            <i type="${type}" class="${family} ${prefix}${name}"></i>
             <p>${name}</p>
         </div>
     </div>
     `
-
 }
+
+function colore(cromia) {
+    const {color} = cromia;
+    document.querySelector(".container-schede").style.color = color;  
+  };
