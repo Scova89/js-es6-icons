@@ -113,15 +113,23 @@ const animals = [
 	}
 ];
 
-const schedaIcona = document.querySelector('.scheda');
+const schedaIcona = document.querySelector('.container-schede');
 
 for(let i = 0; i < animals.length; i++){
-    schedaIcona.innerHTML = `
-    <div>
-        <i class="fas fa-cat"></i>
-        <p>cat</p>
-    </div>
-    `
+    const schedaCorrente = animals[i];
+    
+    schedaIcona.innerHTML += schedaTemplate(schedaCorrente);
 }
 
 
+function schedaTemplate(dati){
+    const {name, prefix, type, family, color} = dati;
+    return `
+    <div class="scheda">
+        <div>
+            <i class="fas fa-cat"></i><p>cat</p>
+        </div>
+    </div>
+    `
+
+}
