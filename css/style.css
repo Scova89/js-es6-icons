@@ -57,8 +57,9 @@ label span{
     margin: 30px 20px
 }
 
-.scheda i{
+.scheda {
     font-size: 50pt;
+    text-align: center;
 }
 
 .scheda p{

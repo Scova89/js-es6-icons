@@ -127,7 +127,8 @@ function schedaTemplate(dati){
     return `
     <div class="scheda">
         <div>
-            <i class="fas fa-cat"></i><p>cat</p>
+            <i class="${family} ${prefix}${name}"></i>
+            <p>${name}</p>
         </div>
     </div>
     `
