@@ -113,4 +113,15 @@ const animals = [
 	}
 ];
 
-console.log(animals)
+const schedaIcona = document.querySelector('.scheda');
+
+for(let i = 0; i < animals.length; i++){
+    schedaIcona.innerHTML = `
+    <div>
+        <i class="fas fa-cat"></i>
+        <p>cat</p>
+    </div>
+    `
+}
+
+
